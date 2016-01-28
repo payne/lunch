@@ -28,6 +28,14 @@ ActiveRecord::Schema.define(version: 20160128012234) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "lunch_assignments", force: :cascade do |t|
+    t.integer "lunch_event_id"
+    t.integer "person_id"
+  end
+
+  add_index "lunch_assignments", ["lunch_event_id"], name: "index_lunch_assignments_on_lunch_event_id"
+  add_index "lunch_assignments", ["person_id"], name: "index_lunch_assignments_on_person_id"
+
   create_table "lunch_events", force: :cascade do |t|
     t.date     "when"
     t.datetime "created_at", null: false
