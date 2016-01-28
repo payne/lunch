@@ -15,5 +15,10 @@
   <%= @person.num_lunches %>
 </p>
 
+<p>
+  <strong>Lunch Events</strong>
+  <%= @person.lunch_event.join(",") %>
+</p>
+
 <%= link_to 'Edit', edit_person_path(@person) %> |
 <%= link_to 'Back', people_path %>
