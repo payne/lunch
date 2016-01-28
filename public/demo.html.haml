@@ -1,0 +1,28 @@
+%table
+  %thead
+    %tr
+      %th Name
+      %th Email
+      %th Num lunches
+      %th{:colspan => "3"}
+  %tbody
+    %tr
+      %td Matt
+      %td
+      %td
+      %td
+        %a{:href => "/people/1"} Show
+      %td
+        %a{:href => "/people/1/edit"} Edit
+      %td
+        %a{"data-confirm" => "Are you sure?", "data-method" => "delete", :href => "/people/1", :rel => "nofollow"} Destroy
+    %tr
+      %td Tracey
+      %td
+      %td
+      %td
+        %a{:href => "/people/2"} Show
+      %td
+        %a{:href => "/people/2/edit"} Edit
+      %td
+        %a{"data-confirm" => "Are you sure?", "data-method" => "delete", :href => "/people/2", :rel => "nofollow"} Destroy
