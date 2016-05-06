@@ -15,3 +15,8 @@
 /log/*
 !/log/.keep
 /tmp
+.dockerignore
+Dockerfile
+public/assets
+.idea/lunch.iml
+.idea/workspace.xml
